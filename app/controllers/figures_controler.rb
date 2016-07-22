@@ -13,7 +13,7 @@ class FiguresController < ApplicationController
     erb :'figures/show'
   end
 
-  post '/figures' do
+  post '/figures/new' do
     @figure = Figure.create(params[:figure])
 
     if !params[:landmark][:name].empty?

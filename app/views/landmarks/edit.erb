@@ -1,7 +1,7 @@
 <h1>Update <%= @landmark.name %></h1>
 
 <form action="/landmarks/<%=@landmark.id%>" method="post">
-  <!-- <input id="hidden" type="hidden" name="_method" value="patch"> -->
+  <input id="hidden" type="hidden" name="_method" value="patch">
 
   <p>Landmark Name:<input type="text" name="landmark[name]" value="<%=@landmark.name%>" id="name"></p>
 
